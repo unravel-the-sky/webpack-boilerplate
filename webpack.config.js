@@ -1,6 +1,5 @@
 module.exports = {
   entry: ['./src/main.js', './src/style.css'],
-
   output: {
     path: __dirname,
     publicPath: '/',
@@ -12,7 +11,7 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'script-loader'
+          loader: 'babel-loader'
         }
       },
       {
